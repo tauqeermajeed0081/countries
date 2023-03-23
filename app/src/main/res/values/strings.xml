@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Countries</string>
+    <string name="no_internet">No Internet Available</string>
+    <string name="alert_description">Alert</string>
+    <string name="dash">-</string>
+    <string name="alert_text">Alert</string>
+    <string name="ok_text">OK</string>
+
+    <string name="connection_time_out" translatable="false">Connection Time out</string>
+    <string name="error_msg">Empty or invalid string</string>
+    <string name="select_customer">Countries List</string>
+    <string name="no_search_found">No Search Found</string>
+    <string name="try_adjusting_your_filters">Search using a proper reference</string>
+
+</resources>

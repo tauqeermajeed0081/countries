@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="dataList"
+            type="com.example.countries.core.model.CountriesItem" />
+    </data>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/bagsMainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.example.countries.utils.CustomTextView
+                    android:id="@+id/tvName"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/_35sdp"
+                    android:includeFontPadding="false"
+                    android:text="@{dataList.name}"
+                    android:textColor="@color/air_awesome_purple_200"
+                    android:textSize="@dimen/_12ssp"
+                    android:textAlignment="textStart"
+                    app:font_name="objectiveMedium" />
+
+                <com.example.countries.utils.CustomTextView
+                    android:id="@+id/tvRegion"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/_35sdp"
+                    android:includeFontPadding="false"
+                    android:text="@{dataList.region}"
+                    android:textAlignment="center"
+                    android:textColor="@color/air_awesome_purple_200"
+                    android:textSize="@dimen/_12ssp"
+                    app:font_name="objectiveMedium" />
+                <com.example.countries.utils.CustomTextView
+                    android:id="@+id/tvCode"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/_35sdp"
+                    android:includeFontPadding="false"
+                    android:textAlignment="center"
+                    android:text="@{dataList.code}"
+                    android:textColor="@color/air_awesome_purple_200"
+                    android:textSize="@dimen/_12ssp"
+                    app:font_name="objectiveMedium" />
+            </LinearLayout>
+
+            <com.example.countries.utils.CustomTextView
+                android:id="@+id/tvCapital"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35sdp"
+                android:includeFontPadding="false"
+                android:text="@{dataList.capital}"
+                android:textColor="@color/air_awesome_purple_200"
+                android:textSize="@dimen/_12ssp"
+                app:font_name="objectiveMedium" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/background_dark"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
